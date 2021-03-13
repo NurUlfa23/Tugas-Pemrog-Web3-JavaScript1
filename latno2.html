@@ -1,0 +1,43 @@
+<html>
+<head></head>
+<script language="JavaScript">
+	function tambah() { // Objek yg dipanggil Penjumlahan
+		var val1=document.kirim.T1.value // Pada form kirim akan mengeksekusi hasil variabel T1
+		var val2=document.kirim.T2.value // Pada form kirim akan mengeksekusi hasil variabel T2
+		document.kirim.T3.value=(val1/1+val2/1) // Pada form kirim akan mengeksekusi hasil variabel T3 berupa penjumlahan
+	}
+
+	function kurang() { // Objek yg dipanggil Pengurangan
+		var val1=document.kirim.T1.value  // Pada form kirim akan mengeksekusi hasil variabel T1
+		var val2=document.kirim.T2.value / Pada form kirim akan mengeksekusi hasil variabel T2
+		document.kirim.T3.value=(val1-val2) // Pada form kirim akan mengeksekusi hasil variabel T3 berupa pengurangan
+	}
+
+	function kali() { // Objek yg dipanggil Perkalian
+		var val1=document.kirim.T1.value // Pada form kirim akan mengeksekusi hasil variabel T1
+		var val2=document.kirim.T2.value // Pada form kirim akan mengeksekusi hasil variabel T2
+		document.kirim.T3.value=val1*val2 // Pada form kirim akan mengeksekusi hasil variabel T3 berupa perkalian
+	}
+
+	function bagi() { // Objek yg dipanggil Pembagian
+		var val1=document.kirim.T1.value // Pada form kirim akan mengeksekusi hasil variabel T1
+		var val2=document.kirim.T2.value // Pada form kirim akan mengeksekusi hasil variabel T2
+		document.kirim.T3.value=(val1/val2) // Pada form kirim akan mengeksekusi hasil variabel T3 berupa pembagian
+	}
+
+</script>
+<body>
+	<form method="POST" name="kirim">
+		<p> 
+			Bilangan 1 <input type="text" name="T1" size="20"><br>	
+			Bilangan 2 <input type="text" name="T2" size="20"><br>	
+			Hasil      <input type="text" name="T3" size="25"><br></p>
+        <p>
+        	<input type="button" value="+" name="b1" onclick=tambah()>
+        	<input type="button" value="-" name="b2" onclick=kurang()>
+        	<input type="button" value="X" name="b3" onclick=kali()>
+        	<input type="button" value="/" name="b4" onclick=bagi()>
+        </p>
+	</form>
+</body>
+</html>
